@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luftbilder | Kommunalverlag City-Plan</title>
+    <meta name="description" content="Professionelle Luftbilder aus Hagen, Iserlohn und Umgebung.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><img src="assets/logo.jpg" alt="City-Plan Logo"></a>
+            <button class="mobile-menu-btn" aria-label="Menu">&#9776;</button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">Über Uns</a></li>
+                    <li><a href="pictures.html" class="nav-link active">Luftbilder</a></li>
+                    <li><a href="imprint.html" class="nav-link">Impressum</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero hero-compact">
+        <div class="container hero-content">
+            <h1>Luftbilder</h1>
+            <p>Hagen, Iserlohn und Umgebung von oben.</p>
+        </div>
+    </section>
+
+    <section class="pt-0">
+        <div class="container">
+            <div class="card mb-3">
+                <h3>Individuelle Aufnahmen für Ihr Projekt</h3>
+                <p>Wir erstellen Luftbilder für Ihre individuellen Bedürfnisse. Egal ob für Firmenpräsentationen,
+                    Immobilienexposés, Dokumentationen oder einfach als Blickfang für Ihr Zuhause. Unsere Aufnahmen
+                    decken den Großraum Hagen und Iserlohn ab.</p>
+                <p class="mt-1">Die Bilder stehen Ihnen digital in hoher Auflösung oder als hochwertiger
+                    Abzug zur Verfügung.</p>
+            </div>
+
+            <h2 class="text-center">Galerie</h2>
+
+            <!-- Carousel Container -->
+            <div class="carousel-container">
+                <!-- Slides -->
+                <div class="carousel-slide active">
+                    <img src="assets/air-01.jpg" alt="Luftbild 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/air-02.jpg" alt="Luftbild 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/air-03.jpg" alt="Luftbild 3">
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/air-04.jpg" alt="Luftbild 4">
+                </div>
+
+                <!-- Navigation Buttons -->
+                <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+
+                <!-- Indicators -->
+                <div class="carousel-indicators">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+            </div>
+
+            <div class="text-center mt-3">
+                <a href="imprint.html" class="btn btn-primary">Jetzt anfragen</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>Kommunalverlag City-Plan</h4>
+                    <p>Ihr Partner für effektive Außenwerbung.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Über Uns</a></li>
+                        <li><a href="pictures.html">Luftbilder</a></li>
+                        <li><a href="imprint.html">Impressum</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Kontakt</h4>
+                    <ul>
+                        <li>Ostenallee 80, 59071 Hamm</li>
+                        <li>Tel: 0157-87628132</li>
+                        <li>Email: info@city-plan-tv.de</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kommunalverlag City-Plan. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Inline script for carousel specific logic or move to main.js
+        // Moving to main.js for cleaner separation is better, but since main.js is global,
+        // I will add it there with a check for the carousel element.
+    </script>
+</body>
+
+</html>
